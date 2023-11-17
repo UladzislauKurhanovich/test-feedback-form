@@ -1,0 +1,144 @@
+@import 'scss/variables';
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+h1 {
+  color: $white;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    padding: 1rem;
+    background-image: url("./images/1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 400px;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba($color: $gray, $alpha: 0.5);
+    box-shadow: 0 0 8px rgba($color: $gray, $alpha: 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+textarea {
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 100px;
+    min-height: 100px;
+    border: none;
+}
+  
+.btn-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    font-size: $medium;
+    border-radius: 7px;
+    background-color: cornflowerblue;
+    border: none;
+}
+
+.btn-sub:active {
+    background-color: rgb(79, 122, 202);
+}
+
+.btn-sub:hover {
+    cursor: pointer;
+}
+
+.field {
+    height: 30px;
+    width: 400px;
+    font-size: $medium;
+    background-color: rgba($color: $gray, $alpha: 0.5);
+    color: $white;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .modal p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.4rem 0 0.2rem;
+    z-index: 2;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    font-size: $medium;
+    border-radius: 7px;
+    background-color: cornflowerblue;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-close {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .modal-container {
+    display: flex;
+    position: absolute;
+    top: 140px; left: 140px;
+  }

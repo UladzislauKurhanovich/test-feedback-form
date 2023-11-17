@@ -1,0 +1,30 @@
+{
+  "name": "test-feedback-form",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel ./src/index.html",
+    "server": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UladzislauKurhanovich/test-feedback-form.git"
+  },
+  "author": "vk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UladzislauKurhanovich/test-feedback-form/issues"
+  },
+  "homepage": "https://github.com/UladzislauKurhanovich/test-feedback-form#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "parcel-bundler": "^1.12.5",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

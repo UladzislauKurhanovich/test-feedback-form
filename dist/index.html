@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/style.97fcb138.css">
+<script src="/style.97fcb138.js"></script></head>
+<body>
+    <form class="cf validate" id="form-contact">
+        <h1>Форма для обратной связи</h1>
+        <input class="field" id="full_name" name="full_name" placeholder="Имя" title="Введите имя" type="text" value="" required="">
+        <input class="email-field field" id="email" name="email" placeholder="Email" required="required" title="Введите email" type="email" value="">
+        <input class="field" id="phone_no" name="phone_no" placeholder="Номер телефона" title="Введите номер телефона" type="tel" value="">
+        <textarea class="message-field field" cols="20" id="message" name="message" placeholder="Сообщение" required="required" rows="5"></textarea>
+        <input class="btn-sub" type="submit" value="Отправить" id="input-submit">
+        <div id="err-message"></div>
+    </form>
+    <div class="modal-container">
+        <section class="modal hidden">
+            <div class="flex">
+                <button class="btn-close">⨉</button>
+            </div>
+            <div>
+                <p>
+                Это модальное окно
+                </p>
+            </div>
+            <button class="btn">Submit</button>
+        </section>
+        <div class="overlay hidden"></div>
+        <button class="btn btn-open">Модальное окно</button>
+    </div>
+    <script src="/script.75da7f30.js"></script>
+</body>
+</html>
